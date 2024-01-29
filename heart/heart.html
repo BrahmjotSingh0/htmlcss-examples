@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heart Shape</title>
 <style>
+   body { /* body tag is used to align body items (heart) to center of webpage. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
   .heart {
     width: 100px;
     height: 100px;
@@ -13,7 +21,7 @@
     background-color: red;
   }
   .heart:before,
-  .heart:after {
+  .heart:after { /*  used to insert content before and after the actual content of the '.heart' element. */
     content: '';
     width: 100px;
     height: 100px;
