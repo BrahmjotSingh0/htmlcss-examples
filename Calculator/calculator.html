@@ -13,8 +13,7 @@
 
     <table class="calculator">
         <tr>
-            <td colspan="3"><input type="text" class="resultbox" id="result"></td>
-            <td><input type="button" value="C" id="clearbutton" onclick="clrscr()"></td>
+            <td colspan="4"><input type="text" class="resultbox" id="result"></td>
         </tr>
         <tr>
             <td><input type="button" value="1" onclick="display('1')"></td>
@@ -37,10 +36,13 @@
         <tr>
             <td><input type="button" value="." onclick="display('.')"></td>
             <td><input type="button" value="0" onclick="display('0')"></td>
-            <td><input type="button" value="=" onclick="calc()"></td>
             <td><input type="button" value="-" onclick="display('-')"></td>
+            <td><input type="button" value="=" onclick="calc()"></td>
         </tr>
-    
+        <tr>
+            <td colspan="3"><input type="button" value="Show History" onclick="showHistory()"></td>
+            <td colspan="1"><input type="button" value="C" id="clearbutton" onclick="clrscr()"></td>
+        </tr>
     </table>
 
     <script type="text/javascript" src="main.js"></script>
